@@ -1,7 +1,7 @@
 configuration IE11Stig
 {
   param(
-  [string[]]$ComputerName,
+  [string[]]$ComputerName
   )
 
   Node $ComputerName {
@@ -20,7 +20,7 @@ configuration IE11Stig
       ValueType = "Dword"
       ValueName = '1607'
       ValueData = 3
-    end
+    }
 
     Registry V-46609-1 {
       Ensure      = "Present"
@@ -46,7 +46,7 @@ configuration IE11Stig
       ValueType = "Dword"
       ValueName = 'Isolation64Bit'
       ValueData = 1
-    end
+    }
 
     Registry V-46997 {
 
@@ -55,7 +55,7 @@ configuration IE11Stig
       ValueType = "Dword"
       ValueName = '270C'
       ValueData = 0
-    end
+    }
 
     Registry V-46999 {
 
@@ -64,7 +64,7 @@ configuration IE11Stig
       ValueType = "Dword"
       ValueName = '270C'
       ValueData = 0
-    end
+    }
 
     Registry V-47003 {
 
@@ -73,7 +73,7 @@ configuration IE11Stig
       ValueType = "Dword"
       ValueName = '270C'
       ValueData = 0
-    end
+    }
 
     Registry V-47005 {
 
@@ -82,7 +82,7 @@ configuration IE11Stig
       ValueType = "Dword"
       ValueName = '270C'
       ValueData = 0
-    end
+    }
 
     Registry V-47009 {
 
@@ -91,7 +91,7 @@ configuration IE11Stig
       ValueType = "Dword"
       ValueName = '270C'
       ValueData = 0
-    end
+    }
 
     Registry V-64711 {
 
@@ -100,7 +100,7 @@ configuration IE11Stig
       ValueType = "Dword"
       ValueName = 'PreventOverride'
       ValueData = 1
-    end
+    }
 
     Registry V-64713 {
 
@@ -109,7 +109,7 @@ configuration IE11Stig
       ValueType = "Dword"
       ValueName = 'PreventOverrideAppRepUnknown'
       ValueData = 1
-    end
+    }
 
     Registry V-64715 {
 
@@ -118,7 +118,7 @@ configuration IE11Stig
       ValueType = "Dword"
       ValueName = 'BlockNonAdminActiveXInstall'
       ValueData = 1
-    end
+    }
 
     Registry V-64717 {
 
@@ -127,7 +127,7 @@ configuration IE11Stig
       ValueType = "Dword"
       ValueName = 'PreventIgnoreCertErrors'
       ValueData = 1
-    end
+    }
 
     Registry V-64719 {
 
@@ -136,7 +136,7 @@ configuration IE11Stig
       ValueType = "Dword"
       ValueName = '2301'
       ValueData = 0
-    end
+    }
 
     Registry V-64721 {
 
@@ -145,7 +145,7 @@ configuration IE11Stig
       ValueType = "Dword"
       ValueName = '2301'
       ValueData = 0
-    end
+    }
 
     Registry V-64723 {
 
@@ -154,7 +154,7 @@ configuration IE11Stig
       ValueType = "Dword"
       ValueName = '1201'
       ValueData = 3
-    end
+    }
 
     Registry V-64725 {
 
@@ -163,7 +163,7 @@ configuration IE11Stig
       ValueType = "Dword"
       ValueName = '1201'
       ValueData = 3
-    end
+    }
   } # Node
 } # configuration
 
