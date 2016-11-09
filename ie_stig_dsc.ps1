@@ -16,7 +16,7 @@ configuration IE11Stig
     Registry V-46515 {
 
       Ensure      = "Present"
-      Key = "HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\InternetSettings\Zones\3"
+      Key = "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\CurrentVersion\InternetSettings\Zones\3"
       ValueType = "Dword"
       ValueName = '1607'
       ValueData = 3
@@ -24,7 +24,7 @@ configuration IE11Stig
 
     Registry V-46609-1 {
       Ensure      = "Present"
-      Key = "HKLM\Software\Policies\Microsoft\Internet Explorer\Control Panel"
+      Key = "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Internet Explorer\Control Panel"
       ValueType = "Dword"
       ValueName = "History"
       ValueData = 1
@@ -33,7 +33,7 @@ configuration IE11Stig
 
     Registry V-46609-2 {
       Ensure      = "Present"
-      Key = "HKLM\oftware\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Url History"
+      Key = "HKEY_LOCAL_MACHINE\oftware\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Url History"
       ValueType = "Dword"
       ValueName = "DaysToKeep"
       ValueData = 40
@@ -42,7 +42,7 @@ configuration IE11Stig
     Registry V-46995 {
 
       Ensure      = "Present"
-      Key = "HKLM\Software\Policies\Microsoft\Internet Explorer\Main"
+      Key = "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Internet Explorer\Main"
       ValueType = "Dword"
       ValueName = 'Isolation64Bit'
       ValueData = 1
@@ -51,7 +51,7 @@ configuration IE11Stig
     Registry V-46997 {
 
       Ensure      = "Present"
-      Key = "HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3"
+      Key = "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3"
       ValueType = "Dword"
       ValueName = '270C'
       ValueData = 0
@@ -60,7 +60,7 @@ configuration IE11Stig
     Registry V-46999 {
 
       Ensure      = "Present"
-      Key = "HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1"
+      Key = "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1"
       ValueType = "Dword"
       ValueName = '270C'
       ValueData = 0
@@ -69,7 +69,7 @@ configuration IE11Stig
     Registry V-47003 {
 
       Ensure      = "Present"
-      Key = "HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0"
+      Key = "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0"
       ValueType = "Dword"
       ValueName = '270C'
       ValueData = 0
@@ -78,7 +78,7 @@ configuration IE11Stig
     Registry V-47005 {
 
       Ensure      = "Present"
-      Key = "HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4"
+      Key = "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4"
       ValueType = "Dword"
       ValueName = '270C'
       ValueData = 0
@@ -87,7 +87,7 @@ configuration IE11Stig
     Registry V-47009 {
 
       Ensure      = "Present"
-      Key = "HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2"
+      Key = "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2"
       ValueType = "Dword"
       ValueName = '270C'
       ValueData = 0
@@ -96,7 +96,7 @@ configuration IE11Stig
     Registry V-64711 {
 
       Ensure      = "Present"
-      Key = "HKLM\Software\Policies\Microsoft\Internet Explorer\PhishingFilter"
+      Key = "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Internet Explorer\PhishingFilter"
       ValueType = "Dword"
       ValueName = 'PreventOverride'
       ValueData = 1
@@ -105,7 +105,7 @@ configuration IE11Stig
     Registry V-64713 {
 
       Ensure      = "Present"
-      Key = "HKLM\Software\Policies\Microsoft\Internet Explorer\PhishingFilter"
+      Key = "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Internet Explorer\PhishingFilter"
       ValueType = "Dword"
       ValueName = 'PreventOverrideAppRepUnknown'
       ValueData = 1
@@ -114,7 +114,7 @@ configuration IE11Stig
     Registry V-64715 {
 
       Ensure      = "Present"
-      Key = "HKLM\Software\Policies\Microsoft\Internet Explorer\Security\ActiveX"
+      Key = "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Internet Explorer\Security\ActiveX"
       ValueType = "Dword"
       ValueName = 'BlockNonAdminActiveXInstall'
       ValueData = 1
@@ -123,7 +123,7 @@ configuration IE11Stig
     Registry V-64717 {
 
       Ensure      = "Present"
-      Key = "HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings"
+      Key = "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings"
       ValueType = "Dword"
       ValueName = 'PreventIgnoreCertErrors'
       ValueData = 1
@@ -132,7 +132,7 @@ configuration IE11Stig
     Registry V-64719 {
 
       Ensure      = "Present"
-      Key = "HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3"
+      Key = "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3"
       ValueType = "Dword"
       ValueName = '2301'
       ValueData = 0
@@ -141,7 +141,7 @@ configuration IE11Stig
     Registry V-64721 {
 
       Ensure      = "Present"
-      Key = "HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4"
+      Key = "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4"
       ValueType = "Dword"
       ValueName = '2301'
       ValueData = 0
@@ -150,7 +150,7 @@ configuration IE11Stig
     Registry V-64723 {
 
       Ensure      = "Present"
-      Key = "HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1"
+      Key = "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1"
       ValueType = "Dword"
       ValueName = '1201'
       ValueData = 3
@@ -159,7 +159,7 @@ configuration IE11Stig
     Registry V-64725 {
 
       Ensure      = "Present"
-      Key = "HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2"
+      Key = "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2"
       ValueType = "Dword"
       ValueName = '1201'
       ValueData = 3
