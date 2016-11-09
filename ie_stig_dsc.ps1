@@ -33,7 +33,7 @@ configuration IE11Stig
 
     Registry V-46609-2 {
       Ensure      = "Present"
-      Key = "HKEY_LOCAL_MACHINE\oftware\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Url History"
+      Key = "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Url History"
       ValueType = "Dword"
       ValueName = "DaysToKeep"
       ValueData = 40
@@ -167,4 +167,9 @@ configuration IE11Stig
   } # Node
 } # configuration
 
-IE11Stig -ComputerName cazgdso914-d
+$target="cazgdso915-d"
+
+IE11Stig -ComputerName $target
+$cs = New-CimSession -ComputerName $target
+Start-DscConfiguration -Path ./IE11Stig -Verbose -Force -CimSession $cs -Wait
+
