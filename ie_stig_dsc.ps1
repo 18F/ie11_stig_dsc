@@ -167,9 +167,12 @@ configuration IE11Stig
   } # Node
 } # configuration
 
-$target="cazgdso915-d"
+$target="localhost"
 
 IE11Stig -ComputerName $target
-$cs = New-CimSession -ComputerName $target
-Start-DscConfiguration -Path ./IE11Stig -Verbose -Force -CimSession $cs -Wait
+Start-DscConfiguration -Path ./IE11Stig -Verbose -Force -Wait
 
+
+# For DSC PUSH, run:
+# $cs = New-CimSession -ComputerName $target
+# Start-DscConfiguration -Path ./IE11Stig -Verbose -Force -CimSession $cs -Wait
